@@ -24,6 +24,23 @@ Note: It is important to mention that the HTML section and interaction logic in 
 
 ## Tests
 
+To test the application, please download a zip of this repository.
+
+![image](https://github.com/paolamgarrido/E4_Paradigm/assets/111533069/811f898e-a110-4924-8375-196fcdc65bd7)
+
+Next, open the HTML file and click on the chatbot icon located at the bottom left corner.
+
+![image](https://github.com/paolamgarrido/E4_Paradigm/assets/111533069/401e8ddd-66ed-4f73-b90b-0e8a7554aa9a)
+
+Then, open the chatInputs.pdf file and choose one of the test inputs and send it to begin the conversation with the chatbot. 
+
+![image](https://github.com/paolamgarrido/E4_Paradigm/assets/111533069/513904a1-a6a2-4a53-83fc-87f41159d783) 
+![image](https://github.com/paolamgarrido/E4_Paradigm/assets/111533069/0024c715-6080-4011-89f5-f4629aca8e03)
+
+
+
+You will be guided by the chatbot menu, so there is no need to worry about typing an input in some place other than the main menu, as shown below:
+
 
 ## Analysis
 
