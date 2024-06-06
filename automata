@@ -1,0 +1,195 @@
+% Define initial state.
+start_state(a).
+
+% Define transitions.
+transition(a, b, 0).
+transition(a, c, 1).
+transition(a, d, 2).
+transition(a, e, 3).
+transition(a, l, _).
+
+transition(b, f, 0).
+transition(b, i, 1).
+transition(b, a, 2).
+transition(b, e, 3).
+transition(b, l, _).
+
+transition(c, a, 0).
+transition(c, e, 1).
+transition(c, l, _).
+
+transition(d, a, 0).
+transition(d, e, 1).
+transition(d, l, _).
+
+transition(f, g, 0).
+transition(f, h, 1).
+transition(f, b, 2).
+transition(f, e, 3).
+transition(f, l, _).
+
+transition(g, a, 0).
+transition(g, e, 1).
+transition(g, l, _).
+
+transition(h, a, 0).
+transition(h, e, 1).
+transition(h, l, _).
+
+transition(i, j, 0).
+transition(i, k, 1).
+transition(i, b, 2).
+transition(i, e, 3).
+transition(i, l, _).
+
+transition(j, a, 0).
+transition(j, e, 1).
+transition(j, l, _).
+
+transition(k, a, 0).
+transition(k, e, 1).
+transition(k, l, _).
+
+transition(l, a, 0).
+transition(l, l, _).
+
+% Define menus
+print_main_menu :-
+    write('(0) Rental Experience'), nl,
+    write('(1) Rental Costs'), nl,
+    write('(2) Legal Requirements'), nl,
+    write('(3) Exit'), nl.
+
+print_rental_menu :-
+    write('(0) Rental Properties'), nl,
+    write('(1) Property Owners'), nl.
+
+print_rentalp_menu :-
+    write('(0) Available Locations'), nl,
+    write('(1) Lease Terms'), nl.
+
+print_owners_menu :-
+    write('(0) How to contact the property owner?'), nl,
+    write('(1) Property rules'), nl.
+
+print_final_menu :-
+    write('(0) Main menu'), nl,
+    write('(1) Exit'), nl.
+
+% Start the program
+start :-
+    start_state(InitialState),
+    print_main_menu,
+    process_state(InitialState).
+
+% Get the next state based on the current state and input
+get_next_state(CurrentState, Input, NextState) :-
+    ( transition(CurrentState, NextState, Input) ->
+        write(NextState),nl,
+        true
+    ),
+    (is_exit_state(NextState),
+    is_rental_state(NextState),
+    is_rentalp_state(NextState),
+    is_availablelocations_state(NextState),
+    is_leaseterms_state(NextState),
+    is_owners_state(NextState),
+    is_contact_state(NextState),
+    is_rules_state(NextState),
+    is_costs_state(NextState),
+    is_legal_state(NextState),
+    is_invalid_state(NextState)).
+
+% Check if the state is an exit state
+is_exit_state(e) :-
+    write('Exit message'), nl,
+    halt. % Exit the program
+
+% Ignore states other than 'e'
+is_exit_state(_).
+
+% Check if the state is rental experience
+is_rental_state(b) :-
+    print_rental_menu. 
+
+% Ignore states other than 'b'
+is_rental_state(_).
+
+% Check if the state is rental properties
+is_rentalp_state(f) :-
+    print_rentalp_menu. 
+
+% Ignore states other than 'f'
+is_rentalp_state(_).
+
+% Check if the state is available locations
+is_availablelocations_state(g) :-
+    write('Info locations.'), nl,
+    print_final_menu. 
+
+% Ignore states other than 'g'
+is_availablelocations_state(_).
+
+% Check if the state is lease terms
+is_leaseterms_state(h) :-
+    write('Info lease terms.'), nl,
+    print_final_menu. 
+
+% Ignore states other than 'h'
+is_leaseterms_state(_).
+
+% Check if the state is property owners
+is_owners_state(i) :-
+    print_owners_menu. 
+
+% Ignore states other than 'i'
+is_owners_state(_).
+
+% Check if the state is contact owner
+is_contact_state(j) :-
+    write('Info contact owner.'), nl,
+    print_final_menu. 
+
+% Ignore states other than 'j'
+is_contact_state(_).
+
+% Check if the state is property rules
+is_rules_state(k) :-
+    write('Info property rules.'), nl,
+    print_final_menu. 
+
+% Ignore states other than 'k'
+is_rules_state(_).
+
+% Check if the state is costs
+is_costs_state(c) :-
+    write('Info costs.'), nl,
+    print_final_menu. 
+
+% Ignore states other than 'c'
+is_costs_state(_).
+
+% Check if the state is legal
+is_legal_state(d) :-
+    write('Info legal.'), nl,
+    print_final_menu. 
+
+% Ignore states other than 'd'
+is_legal_state(_).
+
+% Check if the state is invalid
+is_invalid_state(l) :-
+    write('Sorry, I cannot answer that.'), nl. 
+
+% Ignore states other than 'l'
+is_invalid_state(_).
+
+% Process the current state
+process_state(CurrentState) :-
+    read(Input),
+    ( get_next_state(CurrentState, Input, NextState) ->
+        process_state(NextState)
+    ).
+
+% Example starting point
+:- start.

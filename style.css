@@ -1,0 +1,220 @@
+/* Import fonts and symbols from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400;500;600&display=swap');
+
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* box model */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body styles */
+body {
+    background-color: #f9f9f9;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Chatbot container styles */
+.chatbot {
+    background-color: #ffffff;
+    width: 420px;
+    max-width: 90%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Prevent  elements from showing outside the designated area */
+    position: fixed;
+    bottom: 100px;
+    right: 40px;
+    transform: scale(0.5);
+    opacity: 0; /* Set initial opacity to 0 (invisible) */
+    pointer-events: none; /* Prevent interactions with the hidden chatbot element */
+    transition: all 0.1s ease;
+    transform-origin: bottom right; 
+}
+
+/* Chatbot styles when visible class is applied */
+.show-chatbot .chatbot{
+    transform: scale(1); /* Animate to full size */
+    opacity: 1;
+    pointer-events: auto; /* Allow interaction when visible */
+}
+
+/* Chatbot header styles */
+header {
+    background-color: #3471C5;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: relative; 
+}
+
+/* Chat message list styles */
+.chatbox {
+    list-style: none;
+    padding: 15px;
+    height: 300px;
+    overflow-y: auto; /* Adds a vertical scrollbar to the chatbox if its content overflows vertically */
+    white-space: pre-wrap; /* Preserves whitespace and allows text to wrap at the end of the line */
+}
+
+/* Individual chat message styles */
+.chatbox li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Incoming messages (from chatbot) styles */
+.chat.incoming {
+    justify-content: flex-start; /* Align message to left */
+}
+
+.chat.incoming .material-symbols-outlined {
+    font-size: 24px;
+    color: #fff; 
+    background-color: #3471C5;
+    padding: 5px; 
+    margin: 0px;
+    border-radius: 5px; 
+    margin-right: 10px;
+}
+
+.chat.incoming p {
+    background-color: #f1f0f0;
+    padding: 10px 15px;
+    border-radius: 10px;
+    max-width: 80%;
+    font-size: 14px;
+    text-align: justify;
+}
+
+/* Outgoing messages (from user) styles */
+.chat.outgoing {
+    justify-content: flex-end; /* Align message to right */
+}
+
+.chat.outgoing p {
+    background-color: #3471C5;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    max-width: 80%;
+    font-size: 14px;
+}
+
+/* Chat input area styles */
+.chat-input {
+    display: flex; /* Arrange elements horizontally */
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.chat-input textarea {
+    width: calc(100% - 40px); /* Set width to fit the chat input area minus the send button width */
+    border: none;
+    outline: none;
+    resize: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    max-height: 180px;
+}
+
+/* Styles for the send button */
+#send-btn {
+    font-size: 24px;
+    color: #3471C5;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+    visibility: hidden;
+}
+
+/* Styles for the send button on hover */
+#send-btn:hover {
+    color: #768DA1;
+}
+
+  /* Show the send button only when the textarea has text */
+.chat-input textarea:not(:placeholder-shown) + #send-btn {
+    visibility: visible;
+}
+
+/* Chatbot toggler styles */
+.chatbot-toggler{
+    position: fixed; 
+    right: 40px;
+    bottom: 35px;
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    background: #3471C5;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex; /* Arrange elements horizontally */
+    align-items: center;
+    justify-content:center ;
+    transition: all 0.2s ease; /* Add smooth transition for animations */
+}
+
+/* Styles for icons inside the toggler button */
+.chatbot-toggler span{
+    position: absolute;
+}
+
+/* Styles for the icons when the chatbot is visible */
+.show-chatbot .chatbot-toggler span:first-child,
+.show-chatbot .chatbot-toggler span:first-child,
+.chatbot-toggler span:last-child{
+    opacity: 0; /* Hide the first icon */
+}
+
+.show-chatbot .chatbot-toggler span:last-child{
+    opacity: 1; /* Show the last icon */
+}
+
+.show-chatbot .chatbot-toggler{
+    transform: rotate(90deg); /* Rotate the button 90 degrees when chatbot is visible */
+}
+
+/* Style for message buttons */
+.menu-option {  
+    margin: 4px; 
+    margin-left: 0px;
+    margin-right: 20px;
+    padding: 10px 20px; 
+    font-size: 14px; 
+    font-weight: 200; 
+    color: #ffffff; 
+    background-color: #3471C5; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-items: center;
+}
+
+/* Hover effect for buttons */
+.menu-option:hover {
+    background-color: #3471C5; 
+}
+
+/* Background image */
+.background {
+    background-image: url('backgroundWP.png');
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed; /* Fixed background image to prevent scrolling with content */
+    min-height: 100%;
+    padding: 100px;
+}

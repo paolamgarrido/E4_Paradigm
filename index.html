@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400;500;600&display=swap">
+</head>
+<body class = "background">
+    <!-- Button to control the opening and closing of the chatbot interface -->
+    <button class="chatbot-toggler">
+        <span class="material-symbols-outlined">mode_comment</span>
+        <span class="material-symbols-outlined">close</span>
+    </button>
+
+    <!-- Chatbot interface -->
+    <div class="chatbot">
+        <header>
+            <h3>Chatbot</h3>
+        </header>
+        <ul class="chatbox">
+            <!-- Initial chat message -->
+            <li class="chat incoming">
+                <span class="material-symbols-outlined">smart_toy</span>
+                <p>Hi there!👋🏼<br>How can I help you today?</p>
+            </li>
+        </ul>
+        <!-- Input area for typing messages -->
+        <div class="chat-input">
+            <textarea placeholder="Enter a message..."></textarea>
+            <span id="send-btn" class="material-symbols-outlined">send</span>
+        </div>
+    </div>
+</body>
+</html>
