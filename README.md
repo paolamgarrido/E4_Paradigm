@@ -129,7 +129,7 @@ O(k) + O(1) = O(k+1)
 Therefore, by induction, the overall time complexity of the program is O(n), where 𝑛 is the number of user inputs processed, as each input involves a series of O(1) operations that are repeated for every input.
 
 
-### Conclusion
+## Conclusion
 
 In this project, we successfully developed a chatbot application embedded in a webpage to assist users in finding rental properties in Italy. By utilizing the Automata Theory paradigm, specifically Deterministic Finite Automata (DFA), we were able to structure our chatbot in a way that ensures predictable and reliable interactions with users. While Automata Theory provided a clear and effective framework for our application with optimal time complexity, other programming paradigms were also considered for the task.
 
