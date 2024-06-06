@@ -131,6 +131,12 @@ Therefore, by induction, the overall time complexity of the program is O(n), whe
 
 ### Conclusion
 
+In this project, we successfully developed a chatbot application embedded in a webpage to assist users in finding rental properties in Italy. By utilizing the Automata Theory paradigm, specifically Deterministic Finite Automata (DFA), we were able to structure our chatbot in a way that ensures predictable and reliable interactions with users. While Automata Theory provided a clear and effective framework for our application with optimal time complexity, other programming paradigms were also considered for the task.
+
+The other options taken into consideration were Functional Programming as well as Threads and Processes. The functional programming paradigm could have allowed concise and powerful handling of user inputs, but it could have introduced unnecessary complexity. On the other hand, the use of threads could have improved responsiveness, but it would also introduce challenges related to concurrency and state synchronization.
+
+Therefore, among these paradigms, Automata Theory was chosen as the most optimal for several reasons. It provides a straightforward way to manage states and transitions, making it easier to design a chatbot that can handle various user inputs predictably. Additionally, the simplicity of DFA makes it easier to implement and maintain, reducing the risk of bugs and errors in state management. Overall, our selection of Automata Theory allowed us to create a reliable and efficient chatbot application that effectively serves its purpose of helping users find rental properties in Italy. By leveraging the strengths of DFA, we were able to ensure a high-quality user experience and maintainability for future improvements.
+
 
 ## References
 
