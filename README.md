@@ -26,7 +26,7 @@ Note: It is important to mention that the HTML section and interaction logic in 
 
 ## Tests
 
-To test the application, please download a zip of this repository. Next, open the HTML file and click on the chatbot icon located at the bottom left corner.
+To test the application, please download a zip of this repository. Next, open the HTML file and click on the chatbot icon located at the bottom right corner.
 
 ![image](https://github.com/paolamgarrido/E4_Paradigm/assets/111533069/811f898e-a110-4924-8375-196fcdc65bd7)
 
