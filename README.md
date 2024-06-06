@@ -90,7 +90,7 @@ The key operations also have a constant time complexity of O(1) due to the follo
 
 O(k) + O(1) = O(k+1)
 
-Therefore, by induction, the overall time complexity of your program is O(n), where 𝑛 is the number of user inputs processed, as each input involves a series of O(1) operations that are repeated for every input.
+Therefore, by induction, the overall time complexity of the program is O(n), where 𝑛 is the number of user inputs processed, as each input involves a series of O(1) operations that are repeated for every input.
 
 
 ### Conclusion
