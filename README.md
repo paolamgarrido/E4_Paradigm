@@ -36,7 +36,7 @@ Then, open the chatInputs.pdf file, choose one of the test inputs and send it to
 
 ![image](https://github.com/paolamgarrido/E4_Paradigm/assets/111533069/0024c715-6080-4011-89f5-f4629aca8e03)
 
-You will be guided by the chatbot menu, so there is no need to type an input in a place other than the main menu. Just click on the button that corresponds to your choice:
+You will be guided by the chatbot menus, so there is no need to type an input. However, if you prefer, you can still type an input, but only in the main menu section to keep the application functioning properly. As shown below, simply click on the button that corresponds to your choice:
 
 ![image](https://github.com/paolamgarrido/E4_Paradigm/assets/111533069/e48eddbe-bffd-4f3f-96ab-e3e0f86473bb)
 
