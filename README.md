@@ -21,7 +21,7 @@ Below is a snippet of the JavaScript code demonstrating the automaton logic impl
 
 This integration allowed me to maintain the chatbot's interaction logic and DFA logic in a single language and environment, making error handling more efficient while improving the processing of the chatbot's responses to ultimately deliver a functional and easy-to-use application.
 
-Note: It is important to mention that the HTML section and interaction logic in JavaScript are based in the basic concepts described in the following video tutorial https://youtube.com/watch?v=a37BL0stIuM&si=oww3-NymACNW26ye.
+Note: It is important to mention that the HTML section and interaction logic in JavaScript are based on the basic concepts described in the following video tutorial: https://youtube.com/watch?v=a37BL0stIuM&si=oww3-NymACNW26ye.
 
 
 ## Tests
