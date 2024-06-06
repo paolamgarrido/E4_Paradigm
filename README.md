@@ -3,7 +3,35 @@
 ## Description
 
 
-## Models
+## Model
+
+To start building the logic of our chatbot's menu, we chose to employ the concept of Deterministic Finite Automata (DFA). This model begins in a designated state and reads symbols from an input string, with the objective of transitioning between states according to the transition function, continuing until there is no input left. It is important to note that there must be exactly one transition exiting every state for each possible input symbol (Sipser, 2013). This is useful because each state can represent a section of the main menu, scenarios where invalid input is entered or the end of the conversation, while each transition can represent the user input in the conversation.
+
+The DFA is comprised of the following five components:
+
+1. **Q**: A finite set of states.
+2. **Σ**: A finite set of input symbols, known as the alphabet.
+3. **δ**: The transition function, which, given a state and an input symbol, returns the next state. Formally, δ: Q × Σ → Q.
+4. **q0**: The start state (an element of Q).
+5. **F**: A set of accepting states (a subset of Q).
+
+To identify these components, we first created a flow diagram of the menu:
+
+![image](https://github.com/paolamgarrido/E4_Paradigm/assets/111533069/a0d6e60a-3ef3-424f-90e3-3d136e123150)
+
+Next, we began constructing the diagram by building the branches of the menu that can be classified as the smallest subexpressions. According to Michael Sipser, starting with the smallest subexpressions is the most effective approach because it ensures a clear and manageable structure. This method allows us to focus on the fundamental components before integrating them into a more complex overall system.
+
+![automata drawio (3)](https://github.com/paolamgarrido/E4_Paradigm/assets/111533069/cb7f02a8-4edc-4ad9-bf79-f6c711273afa)
+
+We then completed the diagram by adding the transitions that allowed all possible combinations established in our flow diagram.
+
+![automata drawio (2)](https://github.com/paolamgarrido/E4_Paradigm/assets/111533069/38e55ccd-2585-4c6a-b5ec-e0b41740d2e9)
+
+Finally, we considered the possibility of invalid inputs in the chat and added Sink Table (ST) transitions. Sink Tables are used to handle invalid or unrecognized inputs by redirecting the conversation to a designated state that prompts the user for a valid input. This ensures the chatbot can manage unexpected inputs gracefully. In other words, there can be states that have no outgoing transitions for certain symbols. Therefore, we assume these transitions exist but lead to a non-accepting state where the user cannot proceed unless a valid input is entered (University of Groningen, 1998). The following table represents the main invalid inputs:
+
+![image](https://github.com/paolamgarrido/E4_Paradigm/assets/111533069/b00c1e5c-c237-4f73-93cb-8cca4f6d7bce)
+
+This resulted in our final automaton, shown in the diagram below:
 
 ![automata drawio (1)](https://github.com/paolamgarrido/E4_Paradigm/assets/111533069/8fc8a229-c07e-4d73-ad94-5536bf079748)
 
@@ -97,3 +125,7 @@ Therefore, by induction, the overall time complexity of the program is O(n), whe
 
 
 ## References
+
+Sipser, M. (2013). Introduction to the Theory of Computation. En SIGACT news (Vol. 3, pp. 35-37, 64-66). Cengage Learning. http://debracollege.dspaces.org/bitstream/123456789/671/1/Introduction%20to%20the%20Theory%20of%20Computation_2013%20Sipser.pdf
+
+University of Groningen. (1998). Finite-state automata. https://www.let.rug.nl/~vannoord/papers/fsa/node3.html
