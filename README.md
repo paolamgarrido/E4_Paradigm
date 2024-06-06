@@ -5,7 +5,7 @@
 
 ## Model
 
-To start building the logic of our chatbot's menu, we chose to employ the concept of Deterministic Finite Automata (DFA). This model begins in a designated state and reads symbols from an input string, with the objective of transitioning between states according to the transition function, continuing until there is no input left. It is important to note that there must be exactly one transition exiting every state for each possible input symbol (Sipser, 2013). This is useful because each state can represent a section of the main menu, scenarios where invalid input is entered or the end of the conversation, while each transition can represent the user input in the conversation.
+To start building the logic of our chatbot's inputs and menu, we chose to employ the concept of Deterministic Finite Automata (DFA). This model begins in a designated state and reads symbols from an input string, with the objective of transitioning between states according to the transition function, continuing until there is no input left. It is important to note that there must be exactly one transition exiting every state for each possible input symbol (Sipser, 2013). This is useful because each state can represent a section of the main menu, scenarios where invalid input is entered or the end of the conversation, while each transition can represent the user input in the conversation.
 
 The DFA is comprised of the following five components:
 
