@@ -1,4 +1,4 @@
-# E1 Implementation of Lexical Analysis
+# E4 Demonstration of a Programming Paradigm
 
 ## Description
 
