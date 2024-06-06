@@ -5,6 +5,8 @@
 
 ## Models
 
+![automata drawio (1)](https://github.com/paolamgarrido/E4_Paradigm/assets/111533069/8fc8a229-c07e-4d73-ad94-5536bf079748)
+
 
 ## Implementation
 In order to develop the chatbot and implement its logic based on the DFA (Deterministic Finite Automaton) model, I utilized several programming languages. 
@@ -54,6 +56,39 @@ Note: Documented tests that follow the previous guidelines can be found in the t
 
 
 ## Analysis
+
+To determine the overall time complexity of our program, let’s first outline its steps and key operations.
+
+### Steps
+
+- Variable Initialization
+- Define Transitions
+- Define Functions to Print Information and Menus
+- Handle User Input:
+  - Determine if the input is from a button or text
+  - Update the chatbox with user input and chatbot response
+  - Map user message to a number
+  - Transition to the next state
+  - Process the current state to generate the chatbot response
+
+Each of these steps in the code has a constant time complexity of O(1).
+
+### Key Operations
+
+The key operations also have a constant time complexity of O(1) due to the following reasons:
+- **Printing Menus**: Each menu is a predefined set of buttons.
+- **Mapping User Input to a Number**: Uses a dictionary lookup.
+- **State Transitions**: Each state transition and the associated response generation are O(1).
+- **Appending Messages to the Chatbox**: Involves DOM manipulation of one element at a time.
+
+### Proof by Induction
+
+**Base Case**: For an input sequence of length 1, all operations are O(1). Thus, the complexity is O(1).
+
+**Inductive Step**: Assume that for an input sequence of length \( k \), the operations take O(k) time. Now, consider an input sequence of length \( k+1 \). Handling the additional input involves the same set of O(1) operations as described above. This results in the following operation:
+\[ O(k) + O(1) = O(k+1) \]
+
+Therefore, by induction, the overall time complexity of your program is \( O(n) \), where \( n \) is the number of user inputs processed. Each input involves a series of O(1) operations, and these operations are repeated for each input.
 
 
 ### Conclusion
