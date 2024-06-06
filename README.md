@@ -21,7 +21,7 @@ To identify these components, we first created a flow diagram of the menu:
 
 Next, we began constructing the diagram by building the branches of the menu that can be classified as the smallest subexpressions. According to Michael Sipser, starting with the smallest subexpressions is the most effective approach because it ensures a clear and manageable structure. This method allows us to focus on the fundamental components before integrating them into a more complex overall system.
 
-![automata drawio (3)](https://github.com/paolamgarrido/E4_Paradigm/assets/111533069/cb7f02a8-4edc-4ad9-bf79-f6c711273afa)
+![automata drawio (4)](https://github.com/paolamgarrido/E4_Paradigm/assets/111533069/a33da73f-9159-4047-bd59-04d38598e8dd)
 
 We then completed the diagram by adding the transitions that allowed all possible combinations established in our flow diagram.
 
