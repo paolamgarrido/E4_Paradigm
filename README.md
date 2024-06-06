@@ -50,7 +50,7 @@ Once you choose to exit the program, the chatbot will return the next message an
 
 ![image](https://github.com/paolamgarrido/E4_Paradigm/assets/111533069/0ce65d15-b8c5-49e4-86d5-c7be08148111)
 
-More documented tests can be found in the tests.pdf file.
+Note: Documented tests that follow the previous guidelines can be found in the tests.pdf file.
 
 
 ## Analysis
