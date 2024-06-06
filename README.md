@@ -48,7 +48,7 @@ If you enter an invalid input during the chat, the output will be as follows:
 
 ![image](https://github.com/paolamgarrido/E4_Paradigm/assets/111533069/d9938d4c-8a5c-4080-9dda-9b077994baa5)
 
-Once you choose to exit the program, the chatbot will return the next message and close the window after a couple of seconds. Following this, if you open the chatbot window, you won't be able to send any messages in the chat.
+Once you choose to exit the program, the next message will be returned and the chatbot window is going to close after a couple of seconds. Following this, if you open the chatbot window, you won't be able to send any messages in the chat.
 
 ![image](https://github.com/paolamgarrido/E4_Paradigm/assets/111533069/0ce65d15-b8c5-49e4-86d5-c7be08148111)
 
