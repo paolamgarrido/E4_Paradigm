@@ -85,7 +85,8 @@ The key operations also have a constant time complexity of O(1) due to the follo
 
 **Base Case**: For an input sequence of length 1, all operations are O(1). Thus, the complexity is O(1).
 
-**Inductive Step**: Assume that for an input sequence of length \( k \), the operations take O(k) time. Now, consider an input sequence of length   \n\( k+1 \). Handling the additional input involves the same set of O(1) operations as described above. This results in the following operation:
+**Inductive Step**: Assume that for an input sequence of length \( k \), the operations take O(k) time. Now, consider an input sequence of length
+\( k+1 \). Handling the additional input involves the same set of O(1) operations as described above. This results in the following operation:
 
 O(k) + O(1) = O(k+1)
 
