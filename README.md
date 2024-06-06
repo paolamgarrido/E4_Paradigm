@@ -2,6 +2,14 @@
 
 ## Description
 
+Programming paradigms are fundamental approaches to writing computer programs because they provide various frameworks that guide developers in structuring and implementing their code. Common programming paradigms include Automata Theory, Regular Expressions, Languages/Grammars, Lambda Calculus, Threads and Processes, among others. Each paradigm offers unique concepts and methodologies that can be leveraged to solve specific types of problems effectively.
+
+In this project, we developed a chatbot application utilizing the Automata Theory paradigm. Automata Theory is a branch of computer science that deals with the design and analysis of algorithms for processing and recognizing patterns. By applying the concept of Deterministic Finite Automata (DFA), we structured our chatbot to manage conversations through a series of states and transitions, ensuring predictable and reliable interactions with users.
+
+Our chatbot application is embedded in a webpage designed to help users find rental properties in Italy. It assists users in navigating rental information, such as rental properties, costs, legal requirements, and more. This chatbot is useful because it provides a guided and interactive way for users to obtain relevant information quickly and efficiently. The chatbot can handle various scenarios, including invalid inputs, by redirecting users to appropriate states to maintain the flow of conversation.
+
+The use of Automata Theory in our application ensures that each possible user input is properly managed, making the chatbot highly user-friendly. The deterministic nature of DFA also allows the chatbot to transition smoothly between different states, ensuring a coherent and seamless user experience. The following sections will delve deeper into the implementation details and the advantages of using the chosen paradigm for this application.
+
 
 ## Model
 
