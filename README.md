@@ -40,7 +40,7 @@ You will be guided by the chatbot menus, so there is no need to type an input. H
 
 ![image](https://github.com/paolamgarrido/E4_Paradigm/assets/111533069/e48eddbe-bffd-4f3f-96ab-e3e0f86473bb)
 
-The information output once you reach the answer to your questions will most likely look something like this, but format can vary depending on the answer:
+The information output once you reach the answer to your questions will most likely look something like this, but text format can vary depending on the answer:
 
 ![image](https://github.com/paolamgarrido/E4_Paradigm/assets/111533069/aaf34abe-20b2-4eb6-bfb5-075320755d16)
 
